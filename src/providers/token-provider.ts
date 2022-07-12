@@ -321,6 +321,38 @@ export const UNI_ARBITRUM_RINKEBY = new Token(
   'Uni token'
 );
 
+export const WCNDL_CANDLE = new Token(
+  ChainId.CANDLE,
+  '0x85FA00f55492B0437b3925381fAaf0E024747627',
+  18,
+  'WCNDL',
+  'Wrapped CNDL'
+);
+
+export const WETH_CANDLE= new Token(
+  ChainId.CANDLE,
+  '0xb750990F953B36F806d0327678eCFB4eEFd16979',
+  18,
+  'WETH',
+  'Wrapped Ether'
+);
+
+export const USDC_CANDLE = new Token(
+  ChainId.CANDLE,
+  '0x95A0A7953F9292838C0614D690005D5c716E718E',
+  6,
+  'USDC',
+  'USD//C'
+);
+
+export const DAI_CANDLE = new Token(
+  ChainId.CANDLE,
+  '0xad43669cbAC863e33449d423261E525de8da0Ff4',
+  18,
+  'DAI',
+  'Dai Stablecoin'
+);
+
 //polygon tokens
 export const WMATIC_POLYGON = new Token(
   ChainId.POLYGON,
@@ -626,6 +658,8 @@ export const DAI_ON = (chainId: ChainId): Token => {
       return DAI_ARBITRUM;
     case ChainId.ARBITRUM_RINKEBY:
       return DAI_ARBITRUM_RINKEBY;
+    case ChainId.CANDLE:
+      return DAI_CANDLE;
     case ChainId.POLYGON:
       return DAI_POLYGON;
     case ChainId.POLYGON_MUMBAI:
@@ -686,6 +720,8 @@ export const USDC_ON = (chainId: ChainId): Token => {
       return USDC_ARBITRUM;
     case ChainId.ARBITRUM_RINKEBY:
       return USDC_ARBITRUM_RINKEBY;
+    case ChainId.CANDLE:
+      return USDC_CANDLE;
     case ChainId.POLYGON:
       return USDC_POLYGON;
     case ChainId.POLYGON_MUMBAI:

@@ -11,7 +11,7 @@ type TokenApprovalTypes = {
   approvalTokenOut: ApprovalTypes;
 };
 
-const SWAP_ROUTER_ADDRESS = '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
+const SWAP_ROUTER_ADDRESS = '0x1a45c9f823F64c9360b0c3df269F824cf404f82b';
 
 /**
  * Provider for accessing the SwapRouter02 Contract .
